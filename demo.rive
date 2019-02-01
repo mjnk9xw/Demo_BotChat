@@ -1,0 +1,86 @@
+! version 2.0
+
+! sub hello   = hi
+! sub hi,    = hi
+! sub hello,   = hi
+
+! var name = Bot Minh
+! var age  = 2 days
+
++ name ?
+- my name is <bot name>.
+
++ age ?
+- <bot age>
+
++ hi *
+- Hello!
+- Hi, my name is bot!
+- May I help you!
+
++ I want to find people here .
+- Please allow the application to use your location.
+
++ Who created you ?
+- My name is Diamond Minh.
+
++ How old are you ?
+- 2 days
+
++ Who is the Diamond Minh ?
+- facebook.com/minhnguyen2904
+
++ what
+- what cái đầu mày ấy !
+
++ why 
+- Tại vì tao thích ! OK
+- Không hiểu à !
+
++ who
+- Chính bạn đó !
+- My name is bot
+
++ mày do ai tạo ra 
+- Tao do chủ nhân minh tạo ra !
+- Vũ trụ tạo ra tất cả
+
++ ok
+- OK !
+- Rồi !
+
++ *
+- what ?
+- tôi không hiểu bạn nói gì
+- WTF ?
+
++ random
+- This {random}message|sentence{/random} has a random word.
+
++ my name is *
+- <set name=<formal>> Hello, <get name>
+
++ what is my name
+* <get name> == undefined => You never told me your name.
+- Your name is <get name>, silly!
+- Aren't you <get name>?
+
++ what is your name
+- My name is <bot name>
+
++ i am # years old
+- <set age=<star>>I will remember that you are <get age> years old.
+
++ google *
+- Google search: <a href="http://google.com/search?q=<star>">Click Here</a>
+
++ * perl script
+- You need Perl to run a Perl script.
+
+> topic request
+    + name
+    - my name is <bot name>
+< topic
+
++ play request
+- {topic=request} Topic request play.
