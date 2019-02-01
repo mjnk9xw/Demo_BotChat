@@ -1,4 +1,4 @@
 # Demo_BotChat
-- languge golang
+- language golang
 - tools revescipt 
 - first commit , demo revecript + golang
